@@ -4,11 +4,11 @@ $(document).ready(function(e){
 	document.addEventListener("deviceready",function(){
 
 	$('#Izquierda').on("swipeleft",function(){
-	navigator .notification. alert("Deslizo a la izquierda",function(){"Aplicacion ","Aceptar"});
+	navigator .notification. alert("Deslizo a la Izquierda",function(){"aplicacion ","aceptar"});
 	});
 
-$('#derecha').on("swiperight",function(){
-	navigator.notification.confirm("¿Que quieres hacer?",function(opt){
+$('#Derecha').on("swiperight",function(){
+	navigator .notification. confirm("¿Que quieres hacer?",function(opt){
 		switch(opt)
 		{
 			case 1:
@@ -19,9 +19,10 @@ $('#derecha').on("swiperight",function(){
 			navigator.notification.vibrate(1000);
 			break;
 		}
-	},"Aplicacion","Beep,Vibrar,Cancelar");
+	},"aplicacion ","beep,vibrar,cancelar");
 
-});	
-	},false);	
-});
+	});	
+	},false);
+	
+});//document
 		
